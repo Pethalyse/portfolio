@@ -1,0 +1,21 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Portfolio\\": "src"
+    }
+  },
+  "require": {
+    "symfony/http-foundation": "^6.4.3",
+    "symfony/routing": "^6.4",
+    "symfony/http-kernel": "^6.4",
+    "symfony/config": "^7.2",
+    "ext-pdo": "*",
+    "symfony/asset": "^7.2",
+    "twig/extra-bundle": "^3.21",
+    "symfony/dependency-injection": "^7.2",
+    "symfony/yaml": "^7.2",
+    "twig/twig": "^3.21",
+    "firebase/php-jwt": "^6.11",
+    "symfony/var-dumper": "^7.2"
+  }
+}

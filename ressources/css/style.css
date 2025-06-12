@@ -1,0 +1,294 @@
+/* Style principal du portfolio de Yanhis Mezence */
+
+:root {
+    --couleur-primaire: #0d3b66;
+    --couleur-secondaire: #faf0ca;
+    --couleur-accent: #f95738;
+    --texte-clair: #f4f4f4;
+    --fond-sombre: #1a1a1a;
+    --ombre: rgba(0, 0, 0, 0.2);
+    --rayon: 10px;
+    --espace: 1.5rem;
+    --police-titre: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --police-texte: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--police-texte), sans-serif;
+    background-color: var(--fond-sombre);
+    color: var(--texte-clair);
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--couleur-primaire);
+    padding: var(--espace);
+    box-shadow: 0 4px 6px var(--ombre); 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--couleur-secondaire);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--couleur-accent);
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+h1, h2, h3 {
+    font-family: var(--police-titre), sans-serif;
+    color: var(--couleur-secondaire);
+    margin-top: 2rem;
+}
+
+p{
+    text-align: justify;
+}
+
+section.projet-detail {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: var(--rayon);
+    box-shadow: 0 0 10px var(--ombre);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* Sidebar avec compétence hors écran à droite, apparaissant au centre verticalement sur clic */
+.competence-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 999;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+.competence {
+    background-color: #333;
+    color: var(--texte-clair);
+    padding: 0.1rem 0.5rem;
+    border-left: 8px solid var(--couleur-accent);
+    border-radius: var(--rayon) 0 0 var(--rayon);
+    width: 160px;
+    max-width: 70vw;
+    transform: translateX(91%);
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out, font-size 0.3s, padding 0.3s, max-height 0.3s, height 0.3s;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.4rem;
+    position: relative;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    pointer-events: auto;
+}
+
+.competence:first-of-type {
+    animation: slideCompetence 1.2s ease-in-out infinite alternate;
+}
+
+.competence:hover{
+    transform: translateX(2%);
+    animation: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+@keyframes slideCompetence {
+    from {
+        transform: translateX(91%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+.competence.active {
+    transform: translateX(0) translateY(0);
+    white-space: normal;
+    /*overflow: visible;*/
+    overflow-y: auto;
+    box-shadow: -4px 4px 10px var(--ombre);
+    background-color: #3b3b3b;
+    font-size: 1.1rem;
+    padding: 2rem;
+    z-index: 1000;
+    width: 30%;
+    height: auto;
+    line-height: 1.6;
+    animation: none;
+
+}
+
+.competence::before {
+    content: '◄';
+    position: absolute;
+    left: -20px;
+    top: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--couleur-accent);
+    opacity: 0.8;
+}
+
+.competence h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--couleur-secondaire);
+}
+
+.competence p {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    /*font-size: 1.05rem;*/
+}
+
+@media (hover: none) {
+    .competence {
+        white-space: nowrap;
+    }
+
+    .competence.active {
+        transform: translateX(0) translateY(0);
+        white-space: normal;
+        font-size: 1.1rem;
+        padding: 2rem;
+    }
+}
+
+a {
+    color: var(--couleur-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    background-color: var(--couleur-primaire);
+    color: var(--texte-clair);
+    margin-top: auto;
+    box-shadow: 0 -4px 6px var(--ombre);
+}
+
+footer>p{
+    text-align: center;
+}
+
+.cv-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.cv-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.cv-buttons .button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.contact {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.notification {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.presentation{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projet-detail ul{
+    display: grid;
+}
+
+.projet-detail ul li{
+    display: contents;
+}
+
+.fiche-projet {
+    padding: 1rem 0;
+    margin: 2rem 0;
+    border-top: 2px solid var(--couleur-accent);
+    border-bottom: 2px solid var(--couleur-accent);
+}
+
+.fiche-projet h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--police-titre), sans-serif;
+    color: var(--texte-clair);
+    border-left: 4px solid var(--couleur-accent);
+    padding-left: 0.6rem;
+}
+
+.fiche-projet ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fiche-projet li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.fiche-projet li strong {
+    font-weight: bold;
+    color: var(--couleur-secondaire);
+    font-size: 1.05rem;
+    display: inline-block;
+    min-width: 140px;
+}
