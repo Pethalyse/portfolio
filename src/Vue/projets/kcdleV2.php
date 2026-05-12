@@ -79,15 +79,24 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
     </p>
 
     <h2>Captures du projet</h2>
-    <div class="fiche-projet">
-        <h4>Emplacements de captures</h4>
-        <ul>
-            <li><strong>Architecture API / front :</strong> capture à ajouter pour montrer la séparation Laravel et Vue.js.</li>
-            <li><strong>Interface de jeu :</strong> capture à ajouter pour présenter l'expérience utilisateur de la V2.</li>
-            <li><strong>Système PvP :</strong> capture à ajouter pour illustrer le matchmaking ou l'état d'une partie.</li>
-            <li><strong>Administration :</strong> capture à ajouter pour documenter les écrans de gestion.</li>
-        </ul>
-    </div>
+    <ul>
+        <li>
+            <em>- Architecture API Laravel et front-end Vue.js</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/kcdle-v2-architecture.png") ?>" alt="Architecture API Laravel et front-end Vue.js de KCDLE V2">
+        </li>
+        <li>
+            <em>- Interface de jeu KCDLE V2</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/kcdle-v2-interface.png") ?>" alt="Interface de jeu de KCDLE V2">
+        </li>
+        <li>
+            <em>- Système PvP et matchmaking</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/kcdle-v2-pvp.png") ?>" alt="Système PvP et matchmaking de KCDLE V2">
+        </li>
+        <li>
+            <em>- Interface d'administration</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/kcdle-v2-administration.png") ?>" alt="Interface d'administration de KCDLE V2">
+        </li>
+    </ul>
 
     <p><a href="<?= $generateurUrl->generate('projets') ?>">&larr; Retour aux projets</a></p>
 </section>

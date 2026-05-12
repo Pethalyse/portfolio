@@ -68,14 +68,20 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
     </p>
 
     <h2>Captures du projet</h2>
-    <div class="fiche-projet">
-        <h4>Emplacements de captures</h4>
-        <ul>
-            <li><strong>Interface principale :</strong> capture à ajouter lorsque l'écran final de navigation musicale sera disponible.</li>
-            <li><strong>Composants dynamiques :</strong> capture à ajouter pour illustrer les interactions utilisateur et le chargement de contenu.</li>
-            <li><strong>Architecture :</strong> capture à ajouter pour présenter l'organisation MVC et les échanges front/back.</li>
-        </ul>
-    </div>
+    <ul>
+        <li>
+            <em>- Interface principale de Melovibes</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/melovibes-interface.png") ?>" alt="Interface principale de Melovibes">
+        </li>
+        <li>
+            <em>- Composants dynamiques et interactions utilisateur</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/melovibes-composants-dynamiques.png") ?>" alt="Composants dynamiques de Melovibes">
+        </li>
+        <li>
+            <em>- Organisation MVC et communication front/back</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/melovibes-architecture.png") ?>" alt="Architecture MVC de Melovibes">
+        </li>
+    </ul>
 
     <p><a href="<?= $generateurUrl->generate('projets') ?>">&larr; Retour aux projets</a></p>
 </section>
