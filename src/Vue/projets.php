@@ -3,50 +3,72 @@
 ?>
 
 <section class="projets">
-    <h1>Portfolio d’apprentissage</h1>
+    <h1>Portfolio d'apprentissage - BUT3 Informatique parcours RACDV</h1>
     <p>
-        Au cours de ma deuxième année de BUT Informatique, j’ai eu l’occasion de développer mes compétences techniques et humaines à travers des cours spécialisés, des projets encadrés et des productions personnelles. Parmi les compétences du référentiel, trois d’entre elles s’arrêtent au niveau 2 dès la fin du BUT2. Il s’agit des :
+        Au cours de cette troisième année de BUT Informatique parcours RACDV, j'ai pu approfondir mes compétences techniques à travers plusieurs projets académiques et personnels. Les projets <a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a> et <a href="<?= $generateurUrl->generate('kcdle-v2') ?>">KCDLE V2</a> m'ont notamment permis de travailler sur des problématiques concrètes de développement web moderne, d'architecture logicielle, d'intégration d'API, d'optimisation et d'évolution d'applications existantes.
     </p>
-    <ul>
-        <li>📙 Compétence 3 : Administrer des systèmes informatiques communicants complexes</li>
-        <li>📗 Compétence 4 : Gérer des données de l’information</li>
-        <li>📘 Compétence 5 : Conduire un projet</li>
-    </ul>
-    <p>Cette page présente un bilan global et réfléchi de mon appropriation de ces trois compétences, en croisant mes enseignements théoriques et leur application concrète dans mes projets. Les éléments détaillés avec traces sont accessibles dans les pages projets du portfolio.</p>
+    <p>
+        Ces projets m'ont permis de mobiliser plusieurs compétences du référentiel RACDV de niveau 3, notamment autour de la conception d'architectures adaptées, de l'évolution d'applications complexes et de l'intégration de solutions dans des environnements techniques complets.
+    </p>
+    <p>
+        Le travail réalisé cette année m'a également permis de gagner en autonomie dans l'organisation de projets informatiques, dans la structuration du code et dans la prise en compte des problématiques de maintenabilité, de performances et de qualité logicielle.
+    </p>
 
     <div>
-        <h1>📙 Compétence 3 – Administrer des systèmes informatiques communicants complexes</h1>
+        <h1>Compétence Réaliser - Niveau 3</h1>
         <p>
-            Cette compétence a été abordée en cours à travers les unités R3.06 – Architecture Réseaux, R4.01 – Architecture Logicielle et R4.08 – Virtualisation. J’y ai appris les bases du fonctionnement des réseaux (modèle OSI, adressage IP, routage), la conception d’architectures orientées services, ainsi que l’utilisation d’outils modernes comme Docker pour isoler et faire communiquer des composants logiciels.
-            Ces savoirs m’ont été particulièrement utiles dans le projet <a href="<?= $generateurUrl->generate('veryBadSplit') ?>">VeryBadSplit</a>, où nous avons mis en place un environnement de développement virtualisé. J’ai appris à écrire et interpréter des fichiers Dockerfile, à configurer docker-compose, à lier des conteneurs, et à utiliser des volumes pour la persistance des données. Cela m’a permis de mieux comprendre les mécanismes d’intégration continue, de portabilité des applications, et d’environnement reproductible.
-            Dans <a href="<?= $generateurUrl->generate('kcdle') ?>">KCDLE</a>, j’ai travaillé sur la sécurisation des accès à l’application, en implémentant une gestion de session robuste (vérification des accès, redirections, routes protégées), ce qui m’a permis d’approfondir mes connaissances vues en sécurité web et en communication client-serveur.
-            Ces expériences m’ont sensibilisé aux enjeux de modularité, sécurité, déploiement, et m’ont donné de solides bases pour administrer et configurer des systèmes communicants, que ce soit localement ou dans une optique de mise en production.
+            La compétence Réaliser a été principalement travaillée à travers la conception et l'évolution d'architectures web. Dans <a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a>, j'ai appliqué une organisation MVC afin de séparer les responsabilités entre les vues, les traitements serveur et la gestion des données. Cette démarche m'a permis de comprendre que le choix d'une architecture ne dépend pas seulement d'une préférence technique, mais aussi de la capacité du projet à rester lisible, maintenable et évolutif.
+        </p>
+        <p>
+            Dans <a href="<?= $generateurUrl->generate('kcdle-v2') ?>">KCDLE V2</a>, cette compétence a pris une dimension plus avancée grâce à la refonte d'une application existante vers une architecture séparant une API Laravel et un front-end Vue.js. Cette évolution m'a confronté à des problématiques proches d'un contexte professionnel : analyser l'existant, identifier les parties à conserver, restructurer les échanges de données et intégrer de nouvelles fonctionnalités sans dégrader la stabilité globale.
         </p>
     </div>
 
     <div>
-        <h1>📗 Compétence 4 – Gérer des données de l’information</h1>
+        <h1>Compétence Optimiser - Niveau 3</h1>
         <p>
-            Cette compétence a été développée à travers R3.07 – SQL et programmation, R4.03 – Qualité & non-relationnel, et R4.04 – Méthodes d’optimisation. En cours, j’ai appris à modéliser des données complexes, à écrire des requêtes SQL avancées, à optimiser des structures et à m’initier à l’analyse de performance dans des systèmes de gestion de données.
-            Le projet <a href="<?= $generateurUrl->generate('sconote') ?>">Sconote</a> m’a offert une mise en application concrète. J’ai conçu une base de données relationnelle, tout en tenant compte des besoins métiers du système. J’ai rédigé des requêtes SQL complexes intégrant des jointures multiples, des triggers, des fonctions, tout en garantissant une exécution rapide grâce à un schéma optimisé.
-            En parallèle, dans le projet <a href="<?= $generateurUrl->generate('veryBadSplit') ?>">VeryBadSplit</a>, j’ai restructuré les accès aux données pour mieux séparer la logique métier de la vue utilisateur. En suivant le modèle MVCS, j’ai appris à organiser le code pour éviter les dépendances fortes et à structurer les données côté serveur pour faciliter leur restitution dans l’interface utilisateur via Twig.
-            Enfin, dans <a href="<?= $generateurUrl->generate('kcdle') ?>">KCDLE</a>, j’ai été confronté à la manipulation de données dynamiques dans une interface interactive. Cela m’a demandé de réfléchir à la présentation claire de l’information, à la pagination, et à l’ergonomie, tout en veillant à la performance des traitements côté serveur.
-            Ces expériences m’ont permis de consolider une compréhension approfondie des enjeux liés aux données : qualité, cohérence, structuration, et pertinence métier.
+            La compétence Optimiser a été mobilisée en reliant les choix de développement à leurs conséquences mesurables sur l'expérience utilisateur et la maintenabilité. Sur Melovibes, j'ai dû anticiper l'impact de l'organisation des composants, des échanges client/serveur et du chargement des données sur la fluidité de navigation. Cette réflexion m'a aidé à comprendre que l'optimisation ne se limite pas à rendre un traitement plus rapide : elle consiste aussi à concevoir une application dont le comportement reste prévisible et cohérent.
+        </p>
+        <p>
+            Sur KCDLE V2, l'optimisation a été plus directement liée à la refonte d'un code existant. J'ai dû analyser des parties déjà développées, comprendre leurs dépendances et justifier les restructurations nécessaires. L'utilisation de Laravel et Vue.js m'a également permis de choisir des bibliothèques adaptées au domaine du développement web moderne, en exploitant leurs mécanismes pour structurer les routes API, les composants front-end et les échanges de données.
         </p>
     </div>
 
     <div>
-        <h1>📘 Compétence 5 – Conduire un projet</h1>
+        <h1>Compétence Administrer - Niveau 3</h1>
         <p>
-            Cette compétence a été développée à travers les ressources R3.14 / R4.07 – PPP, R4.09 – Management avancé SI, et R4.06 – Communication interne. Ces enseignements m’ont permis de mieux comprendre les étapes clés de la gestion de projet : définition des objectifs, planification, répartition des rôles, suivi des livrables, ainsi que la communication efficace en équipe, à l’oral comme à l’écrit.
-            Le projet <a href="<?= $generateurUrl->generate('sconote') ?>">Sconote</a>, mené en équipe, a été l’occasion d’appliquer ces notions en adoptant une organisation agile. Nous avons structuré le travail autour de sprints, avec un backlog priorisé, des réunions de planification, et des revues régulières pour évaluer l’avancement. Lors de l’un des sprints, j’ai pris le rôle de Scrum Master : j’ai animé les réunions quotidiennes, veillé au respect des engagements, et facilité la communication entre les membres de l’équipe. Ce rôle m’a permis de développer mes compétences en coordination, gestion des blocages et dynamique de groupe.
-            Nous avons utilisé GitHub comme outil de gestion collaborative, avec une organisation des branches, un suivi des issues, et des pull requests validées collectivement. Le travail s’est déroulé dans un cadre professionnel simulé, ce qui m’a permis de m’adapter aux imprévus, de gérer les dépendances techniques et de tenir les délais tout en garantissant la qualité du livrable.
-            Cette expérience m’a permis de comprendre concrètement les enjeux d’une gestion de projet efficace : établir des objectifs réalistes, impliquer les membres, maintenir une vision commune et valoriser les compétences de chacun. Elle a aussi renforcé ma confiance dans ma capacité à assumer des responsabilités de coordination.
-            Enfin, ce projet a nourri ma réflexion dans le cadre du PPP, en me confortant dans l’idée de travailler dans un environnement collaboratif où la communication et la gestion de projet sont centrales.
+            La compétence Administrer est principalement mise en avant dans KCDLE V2, car le projet intègre plusieurs éléments techniques devant fonctionner ensemble : API Laravel, base de données MySQL, front-end Vue.js, environnement Docker et interactions Discord. Cette organisation m'a amené à réfléchir à la configuration d'un environnement web complet, à la séparation des services et à l'automatisation de certains traitements.
+        </p>
+        <p>
+            Les fonctionnalités comme les statistiques, les traitements serveur, les notifications Discord ou les outils d'administration montrent l'importance d'une infrastructure cohérente. J'ai également dû prendre en compte les questions de sécurité liées à l'authentification, aux routes sensibles et à la protection des échanges entre le client et le serveur. Cette compétence m'a donc permis de dépasser le simple développement fonctionnel pour réfléchir au fonctionnement global d'une application dans un environnement technique structuré.
+        </p>
+    </div>
+
+    <div>
+        <h1>Compétence Conduire - Niveau 3</h1>
+        <p>
+            La compétence Conduire a été travaillée en prenant du recul sur les impacts des projets et sur leur intégration dans un environnement logiciel plus large. Avec Melovibes, j'ai réfléchi aux conséquences des choix techniques sur l'expérience utilisateur, l'accessibilité, la fluidité de navigation et la capacité du projet à être maintenu dans le temps. Cette réflexion m'a permis de relier les décisions de développement à leurs effets concrets sur les usages.
+        </p>
+        <p>
+            Avec KCDLE V2, cette compétence s'est exprimée à travers l'adaptation continue d'un projet existant. La migration vers une architecture moderne, l'ajout de modules comme le PvP ou Discord et l'organisation de l'administration m'ont obligé à penser le projet comme un système évolutif. J'ai ainsi mieux compris comment intégrer et adapter un projet informatique dans un environnement structuré, en conservant une cohérence entre les besoins utilisateurs, les contraintes techniques et la maintenabilité.
         </p>
     </div>
 
     <div id="projets">
+        <div class="projet">
+            <h2><a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a></h2>
+            <p>
+                Plateforme web musicale moderne orientée expérience utilisateur, architecture MVC, composants dynamiques et communication front/back. Ce projet sert de support aux apprentissages RACDV de niveau 3 autour de la réalisation, de l'optimisation et de la conduite d'un projet web.
+            </p>
+        </div>
+
+        <div class="projet">
+            <h2><a href="<?= $generateurUrl->generate('kcdle-v2') ?>">KCDLE V2</a></h2>
+            <p>
+                Refonte complète de KCDLE autour d'une API Laravel et d'un front-end Vue.js séparé. Le projet mobilise les compétences RACDV de niveau 3 liées à l'architecture, à l'évolution d'une application existante, à l'optimisation, à l'administration et à l'adaptation d'un système d'information.
+            </p>
+        </div>
+
         <div class="projet">
             <h2><a href="<?= $generateurUrl->generate('kcdle') ?>">KCDLE</a></h2>
             <p>

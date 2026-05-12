@@ -31,6 +31,18 @@ class ControleurPortfolio extends ControleurMere
         return self::afficherVueGeneral("projets/kcdle.php", ["pageTitle" => "Projet KCDLE - Yanhis Mezence"]);
     }
 
+    #[Route(path: ['/projets/melovibes'], name:'melovibes', methods:["GET"])]
+    static function melovibes(): Response
+    {
+        return self::afficherVueGeneral("projets/melovibes.php", ["pageTitle" => "Projet Melovibes - Yanhis Mezence"]);
+    }
+
+    #[Route(path: ['/projets/kcdle-v2'], name:'kcdle-v2', methods:["GET"])]
+    static function kcdleV2(): Response
+    {
+        return self::afficherVueGeneral("projets/kcdleV2.php", ["pageTitle" => "Projet KCDLE V2 - Yanhis Mezence"]);
+    }
+
     #[Route(path: ['/projets/veryBadSplit'], name:'veryBadSplit', methods:["GET"])]
     static function veryBadSplit(): Response
     {
