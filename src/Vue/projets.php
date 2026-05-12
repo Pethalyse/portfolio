@@ -5,13 +5,19 @@
 <section class="projets">
     <h1>Portfolio d'apprentissage - BUT3 Informatique parcours RACDV</h1>
     <p>
-        Au cours de cette troisième année de BUT Informatique parcours RACDV, j'ai pu approfondir mes compétences techniques à travers plusieurs projets académiques et personnels. Les projets <a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a> et <a href="<?= $generateurUrl->generate('kcdle-v2') ?>">KCDLE V2</a> m'ont notamment permis de travailler sur des problématiques concrètes de développement web moderne, d'architecture logicielle, d'intégration d'API, d'optimisation et d'évolution d'applications existantes.
+        Au cours de cette troisième année de BUT Informatique parcours RACDV, j'ai approfondi mes compétences à travers deux projets significatifs : <a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a> et <a href="<?= $generateurUrl->generate('kcdle-v2') ?>">KCDLE V2</a>. Ces projets m'ont permis de travailler les trois compétences de niveau 3 attendues dans le parcours RACDV : Réaliser, Optimiser et Collaborer.
     </p>
     <p>
-        Ces projets m'ont permis de mobiliser plusieurs compétences du référentiel RACDV de niveau 3, notamment autour de la conception d'architectures adaptées, de l'évolution d'applications complexes et de l'intégration de solutions dans des environnements techniques complets.
+        Melovibes m'a permis de consolider mes compétences en conception d'application web, en structuration d'architecture MVC, en organisation d'interfaces dynamiques et en réflexion sur l'expérience utilisateur. Ce projet a constitué une mise en pratique importante de la compétence Réaliser, car il m'a demandé de concevoir une application cohérente, évolutive et techniquement organisée.
     </p>
     <p>
-        Le travail réalisé cette année m'a également permis de gagner en autonomie dans l'organisation de projets informatiques, dans la structuration du code et dans la prise en compte des problématiques de maintenabilité, de performances et de qualité logicielle.
+        KCDLE V2 m'a permis d'aller plus loin dans l'évolution d'une application existante, avec une refonte importante autour de Laravel et Vue.js. Cette séparation nette entre le back-end et le front-end m'a amené à travailler sur des problématiques plus avancées : architecture API, structuration des données, optimisation des échanges, intégration de services externes et maintenabilité d'un projet en évolution continue.
+    </p>
+    <p>
+        Ces deux projets m'ont également permis de travailler la compétence Optimiser, en analysant les impacts de mes choix techniques sur la performance, la fluidité, la lisibilité du code et la capacité d'évolution des applications. L'optimisation n'a pas été abordée uniquement comme une recherche de vitesse, mais comme une démarche globale visant à produire des applications plus efficaces, plus robustes et plus faciles à maintenir.
+    </p>
+    <p>
+        Enfin, la compétence Collaborer a été mobilisée à travers la veille technologique, l'organisation du travail, la conduite du changement technique et la gestion de projet. Même lorsque certaines réalisations ont été menées en autonomie, elles ont nécessité une posture professionnelle : rechercher les bonnes informations, justifier les choix techniques, planifier les évolutions et structurer le projet comme un système informatique complet.
     </p>
 
     <div>
@@ -35,22 +41,15 @@
     </div>
 
     <div>
-        <h1>Compétence Administrer - Niveau 3</h1>
+        <h1>Compétence Collaborer - Niveau 3</h1>
         <p>
-            La compétence Administrer est principalement mise en avant dans KCDLE V2, car le projet intègre plusieurs éléments techniques devant fonctionner ensemble : API Laravel, base de données MySQL, front-end Vue.js, environnement Docker et interactions Discord. Cette organisation m'a amené à réfléchir à la configuration d'un environnement web complet, à la séparation des services et à l'automatisation de certains traitements.
+            La compétence Collaborer a été travaillée à travers la veille technologique, l'organisation du projet et la conduite progressive des évolutions techniques. Dans <a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a>, cette compétence s'est exprimée par la recherche d'informations fiables sur les pratiques de développement web, l'organisation d'interfaces modernes et la structuration d'une application dynamique. Cette veille m'a permis de transformer des ressources techniques en choix concrets pour améliorer l'ergonomie et la cohérence du projet.
         </p>
         <p>
-            Les fonctionnalités comme les statistiques, les traitements serveur, les notifications Discord ou les outils d'administration montrent l'importance d'une infrastructure cohérente. J'ai également dû prendre en compte les questions de sécurité liées à l'authentification, aux routes sensibles et à la protection des échanges entre le client et le serveur. Cette compétence m'a donc permis de dépasser le simple développement fonctionnel pour réfléchir au fonctionnement global d'une application dans un environnement technique structuré.
-        </p>
-    </div>
-
-    <div>
-        <h1>Compétence Conduire - Niveau 3</h1>
-        <p>
-            La compétence Conduire a été travaillée en prenant du recul sur les impacts des projets et sur leur intégration dans un environnement logiciel plus large. Avec Melovibes, j'ai réfléchi aux conséquences des choix techniques sur l'expérience utilisateur, l'accessibilité, la fluidité de navigation et la capacité du projet à être maintenu dans le temps. Cette réflexion m'a permis de relier les décisions de développement à leurs effets concrets sur les usages.
+            Dans <a href="<?= $generateurUrl->generate('kcdle-v2') ?>">KCDLE V2</a>, cette compétence a pris une dimension plus importante avec la refonte complète de l'architecture. Il a fallu organiser le travail, prioriser les évolutions, accompagner le passage vers une séparation front-end/back-end et maintenir une vision globale du projet. La veille autour de Laravel, Vue.js, des architectures API et des bonnes pratiques full-stack a directement soutenu les décisions techniques prises pendant le développement.
         </p>
         <p>
-            Avec KCDLE V2, cette compétence s'est exprimée à travers l'adaptation continue d'un projet existant. La migration vers une architecture moderne, l'ajout de modules comme le PvP ou Discord et l'organisation de l'administration m'ont obligé à penser le projet comme un système évolutif. J'ai ainsi mieux compris comment intégrer et adapter un projet informatique dans un environnement structuré, en conservant une cohérence entre les besoins utilisateurs, les contraintes techniques et la maintenabilité.
+            Ces projets m'ont aussi permis d'identifier les enjeux de l'innovation numérique. Melovibes met en avant la valeur d'une expérience utilisateur claire et adaptée aux usages actuels, tandis que KCDLE V2 montre l'importance de l'engagement communautaire, des statistiques, du PvP et des interactions Discord dans un service numérique orienté fidélisation. La compétence Collaborer ne se limite donc pas au travail en équipe : elle implique aussi de comprendre les usages, de partager une veille, d'accompagner le changement technique et de structurer l'avancement d'un projet informatique.
         </p>
     </div>
 
@@ -63,14 +62,14 @@
         <div class="projet">
             <h2><a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a></h2>
             <p>
-                Plateforme web musicale moderne orientée expérience utilisateur, architecture MVC, composants dynamiques et communication front/back. Ce projet sert de support aux apprentissages RACDV de niveau 3 autour de la réalisation, de l'optimisation et de la conduite d'un projet web.
+                Plateforme web musicale moderne orientée expérience utilisateur, architecture MVC, composants dynamiques et communication front/back. Ce projet sert de support aux apprentissages RACDV de niveau 3 autour de la réalisation, de l'optimisation et de la collaboration appliquée à l'organisation d'un projet web.
             </p>
         </div>
 
         <div class="projet">
             <h2><a href="<?= $generateurUrl->generate('kcdle-v2') ?>">KCDLE V2</a></h2>
             <p>
-                Refonte complète de KCDLE autour d'une API Laravel et d'un front-end Vue.js séparé. Le projet mobilise les compétences RACDV de niveau 3 liées à l'architecture, à l'évolution d'une application existante, à l'optimisation, à l'administration et à l'adaptation d'un système d'information.
+                Refonte complète de KCDLE autour d'une API Laravel et d'un front-end Vue.js séparé. Le projet mobilise les compétences RACDV de niveau 3 liées à l'architecture, à l'évolution d'une application existante, à l'optimisation, à la veille technologique, à la conduite du changement technique et à l'organisation du projet.
             </p>
         </div>
 
