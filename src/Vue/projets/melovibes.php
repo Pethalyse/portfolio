@@ -16,10 +16,13 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
         Melovibes est un projet web réalisé dans le cadre du BUT Informatique parcours RACDV. L'objectif du projet était de concevoir une plateforme musicale moderne mettant l'accent sur l'expérience utilisateur, la fluidité de navigation et l'architecture applicative.
     </p>
     <p>
-        Le projet m'a permis de travailler sur la conception d'interfaces dynamiques, l'organisation du code front-end et back-end, ainsi que la structuration complète d'une application web moderne. J'ai pu appliquer des principes d'ergonomie, de modularité et de maintenabilité tout en réfléchissant aux problématiques de performances et d'évolutivité.
+        Le projet repose sur une séparation claire entre le front-end et le back-end. La partie back-end est principalement exposée sous forme d'API, documentée avec Swagger / API Platform, ce qui permet au front-end de consommer les données de manière structurée. Cette organisation m'a permis de travailler une architecture plus proche des pratiques actuelles du développement web, où le serveur ne se limite pas à générer des pages mais fournit des ressources exploitables par une interface cliente.
     </p>
     <p>
-        Le développement de Melovibes m'a également permis de renforcer mes compétences dans la gestion des interactions utilisateur, l'intégration de composants dynamiques et l'organisation d'une architecture logicielle cohérente. Le projet a nécessité une réflexion complète sur la structure des données, les échanges client/serveur et l'expérience utilisateur globale.
+        Melovibes utilise également deux API externes. La première est l'API Spotify, utilisée pour récupérer et importer des informations musicales comme des artistes, des albums ou des titres. La seconde est une API d'hébergement de photos développée par moi et mon équipe, utilisée pour gérer les images liées à l'application. L'intégration de ces services m'a permis de travailler sur la communication entre plusieurs systèmes, la structuration des échanges de données et la cohérence globale d'une application connectée à des ressources externes.
+    </p>
+    <p>
+        Le développement de Melovibes m'a également permis de renforcer mes compétences dans la gestion des interactions utilisateur, l'intégration de composants dynamiques et l'organisation d'une architecture logicielle cohérente. Le projet a nécessité une réflexion complète sur la structure des données, les échanges entre le front-end, le back-end et les API externes, ainsi que sur l'expérience utilisateur globale.
     </p>
 
     <div class="fiche-projet">
@@ -36,13 +39,17 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
 
     <h2>Fonctionnalités</h2>
     <ul>
-        <li>Interface dynamique adaptée à la consultation de contenu musical.</li>
-        <li>Navigation fluide entre les différentes parties de l'application.</li>
-        <li>Gestion de contenu musical et organisation des données associées.</li>
-        <li>Architecture modulaire facilitant l'ajout de nouvelles fonctionnalités.</li>
-        <li>Gestion des données utilisateurs et des interactions avec l'application.</li>
-        <li>Communication entre les traitements serveur et les composants front-end.</li>
-        <li>Travail spécifique sur l'ergonomie et l'expérience utilisateur.</li>
+        <li>Interface dynamique</li>
+        <li>Navigation fluide</li>
+        <li>Gestion de contenu musical</li>
+        <li>Back-end exposé sous forme d'API</li>
+        <li>Documentation API avec Swagger / API Platform</li>
+        <li>Communication front-end / back-end via API REST</li>
+        <li>Intégration de l'API Spotify</li>
+        <li>Intégration d'une API externe d'hébergement de photos développée par l'équipe</li>
+        <li>Architecture modulaire</li>
+        <li>Gestion des données utilisateurs</li>
+        <li>Travail sur l'ergonomie et l'expérience utilisateur</li>
     </ul>
 
     <h2>Technologies</h2>
@@ -52,7 +59,11 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
         <li>HTML / CSS</li>
         <li>Architecture MVC</li>
         <li>SQL</li>
-        <li>API web</li>
+        <li>API Platform</li>
+        <li>Swagger</li>
+        <li>API REST</li>
+        <li>API Spotify</li>
+        <li>API d'hébergement de photos développée par l'équipe</li>
     </ul>
 
     <h2>Difficultés rencontrées</h2>
@@ -82,6 +93,10 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
             <em>- Organisation MVC et communication front/back</em>
             <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/melovibes-architecture.png") ?>" alt="Architecture MVC de Melovibes">
         </li>
+        <li>
+            <em>- Documentation API avec Swagger / API Platform</em>
+            <img src="<?= $assistantUrl->getAbsoluteUrl("../ressources/img/melovibes-api.png") ?>" alt="Documentation API Swagger de Melovibes">
+        </li>
     </ul>
 
     <p><a href="<?= $generateurUrl->generate('projets') ?>">&larr; Retour aux projets</a></p>
@@ -90,28 +105,31 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
 <div class="competence-sidebar">
     <div class="competence">
         <h3>Compétence : Réaliser</h3>
-        <p><strong>AC31.01 - Choisir et implémenter les architectures adaptées</strong> - Le développement de Melovibes m'a conduit à choisir une architecture web capable de répondre à un besoin applicatif complet : afficher du contenu musical, permettre une navigation fluide et organiser les échanges entre les différentes parties de l'application. J'ai structuré le projet autour d'une logique MVC afin de séparer les responsabilités entre la gestion des données, les traitements applicatifs et l'affichage. Ce choix architectural m'a permis de mieux maîtriser l'évolution du projet, car chaque partie du code possédait un rôle identifiable.</p>
-        <p>Dans une logique de niveau BUT3, cette compétence ne se limite pas au fait de produire du code fonctionnel. Elle consiste aussi à justifier les choix techniques retenus. Dans Melovibes, l'organisation en couches m'a permis d'éviter une application trop monolithique et difficile à maintenir. Les vues pouvaient évoluer sans remettre en cause toute la logique métier, tandis que les traitements serveur restaient isolés de la présentation. Cette séparation a directement participé à la qualité globale du projet.</p>
-        <p>Ce travail montre ma capacité à choisir une architecture adaptée au contexte d'une application web. L'objectif n'était pas seulement de faire fonctionner le site, mais de concevoir une structure suffisamment claire pour pouvoir être comprise, modifiée et enrichie par la suite. Cette démarche correspond bien à l'apprentissage critique AC31.01, car elle associe conception, choix techniques et implémentation concrète d'une architecture adaptée.</p>
+        <p><strong>AC31.01 - Choisir et implémenter les architectures adaptées</strong> - Le développement de Melovibes m'a conduit à choisir une architecture web adaptée à une application musicale dynamique. Le projet ne repose pas uniquement sur des pages générées côté serveur : il met en place une séparation claire entre le front-end et le back-end. Le back-end est exposé sous forme d'API, documentée avec Swagger / API Platform, ce qui permet au front-end de récupérer les données nécessaires de manière structurée.</p>
+        <p>Ce choix architectural m'a permis de mieux comprendre l'intérêt d'une application découplée. Le front-end peut se concentrer sur l'affichage, l'expérience utilisateur et les interactions, tandis que le back-end centralise les traitements, les routes API et l'accès aux données. Cette séparation rend le projet plus lisible, plus maintenable et plus facilement évolutif.</p>
+        <p>L'architecture de Melovibes intègre également des services externes. L'API Spotify est utilisée pour importer et exploiter des données musicales, tandis qu'une API d'hébergement de photos développée par moi et mon équipe permet de gérer les images associées à l'application. Cette intégration de plusieurs sources de données m'a obligé à concevoir une architecture cohérente, capable de faire communiquer différents systèmes sans mélanger leurs responsabilités.</p>
+        <p>Cette démarche correspond directement à l'AC31.01, car elle m'a amené à choisir, justifier et implémenter une architecture adaptée au contexte du projet. L'objectif n'était pas seulement de produire une application fonctionnelle, mais de construire une base technique claire, modulaire et exploitable dans une logique de développement web moderne.</p>
         <p><strong>AC31.02 - Faire évoluer une application existante</strong> - Au fur et à mesure du développement de Melovibes, plusieurs fonctionnalités ont été ajoutées ou modifiées. Cette évolution progressive m'a amené à retravailler certaines parties déjà existantes du projet, notamment au niveau de l'interface, de l'organisation des fichiers et des traitements liés aux données affichées. J'ai donc dû apprendre à modifier une application sans remettre en cause son fonctionnement global.</p>
         <p>Cette compétence a été travaillée lorsque j'ai dû adapter le code existant à de nouveaux besoins fonctionnels. Chaque modification devait être intégrée dans la structure déjà en place, sans créer de rupture dans l'organisation du projet. Cette démarche m'a obligé à raisonner en termes de maintenabilité : avant d'ajouter une fonctionnalité, il fallait vérifier son impact sur le reste de l'application et éviter de dupliquer inutilement du code.</p>
         <p>Cette expérience m'a permis de comprendre qu'une application évolue rarement de manière linéaire. Même lorsqu'un projet est bien défini au départ, de nouveaux besoins apparaissent et nécessitent des ajustements. Avec Melovibes, j'ai donc travaillé la capacité à faire évoluer une base applicative existante en conservant sa cohérence technique, ce qui correspond directement à l'apprentissage critique AC31.02.</p>
-        <p><strong>AC31.03 - Intégrer des solutions dans un environnement de production</strong> - Melovibes m'a permis d'aborder l'intégration d'une solution web dans un environnement technique complet. Même si le projet reste académique, il a été conçu comme une application devant pouvoir être installée, testée et consultée dans un environnement cohérent. J'ai donc porté une attention particulière à l'organisation des ressources, à la structuration des fichiers et à la séparation des éléments nécessaires au fonctionnement de l'application.</p>
-        <p>Cette compétence a été travaillée à travers la préparation de l'application pour une utilisation hors du simple contexte de développement. Il ne s'agissait pas uniquement de produire des pages isolées, mais de construire un ensemble applicatif exploitable, avec une logique de navigation, des ressources correctement reliées et une architecture suffisamment stable pour être présentée et maintenue.</p>
-        <p>Cette démarche m'a permis de mieux comprendre la différence entre un code qui fonctionne localement et une application réellement intégrable. Une solution destinée à être utilisée doit être organisée, cohérente et suffisamment robuste pour être déplacée ou déployée sans dépendre uniquement de conditions locales. Cette réflexion correspond à l'apprentissage critique AC31.03.</p>
+        <p><strong>AC31.03 - Intégrer des solutions dans un environnement de production</strong> - Melovibes m'a permis de travailler l'intégration de plusieurs solutions techniques dans un même environnement applicatif. Le projet repose sur un back-end exposé en API, une interface front-end qui consomme cette API, ainsi que deux services externes : l'API Spotify et une API d'hébergement de photos développée par mon équipe.</p>
+        <p>Cette organisation m'a permis de comprendre qu'une application web moderne ne fonctionne pas toujours comme un bloc unique. Elle peut dépendre de plusieurs services spécialisés qui doivent communiquer correctement entre eux. Dans Melovibes, le back-end sert d'intermédiaire structurant : il expose les ressources nécessaires, organise les traitements et permet au front-end d'accéder aux données de manière cohérente.</p>
+        <p>L'utilisation de Swagger / API Platform a également joué un rôle important dans cette intégration. La documentation de l'API facilite la compréhension des routes disponibles, des ressources manipulées et des échanges possibles entre les différentes parties du projet. Cela rend l'application plus claire à maintenir et plus simple à faire évoluer.</p>
+        <p>Cette expérience correspond à l'AC31.03, car elle montre ma capacité à intégrer une solution applicative dans un environnement technique complet. J'ai dû prendre en compte la communication entre services, la structuration des endpoints, l'utilisation d'API externes et la cohérence globale de l'application.</p>
     </div>
 
     <div class="competence">
         <h3>Compétence : Optimiser</h3>
-        <p><strong>AC32.01 - Anticiper les résultats de diverses métriques</strong> - Dans Melovibes, l'optimisation a principalement été abordée à travers la fluidité de l'expérience utilisateur et la manière dont l'application charge et affiche les informations. J'ai dû anticiper l'impact de certains choix techniques sur le temps de chargement, la lisibilité du code et la réactivité de l'interface. Même sans mettre en place un profilage avancé, cette réflexion m'a amené à penser l'application en termes de performance perçue par l'utilisateur.</p>
-        <p>L'organisation des composants, la limitation des traitements inutiles et la structuration des échanges entre les différentes parties de l'application ont constitué des points importants. J'ai compris que des choix apparemment simples, comme la manière de charger des données ou de structurer une page, peuvent avoir un impact direct sur la rapidité et la qualité d'utilisation du site.</p>
-        <p>Cette approche correspond à l'apprentissage critique AC32.01, car elle m'a amené à anticiper des métriques concrètes comme le temps d'affichage, la charge côté client et la complexité de maintenance. Elle montre également que l'optimisation ne concerne pas uniquement les algorithmes complexes, mais aussi l'ensemble des choix qui influencent le comportement d'une application web.</p>
+        <p><strong>AC32.01 - Anticiper les résultats de diverses métriques</strong> - Dans Melovibes, l'optimisation a aussi été abordée à travers l'architecture API. Le fait de séparer le front-end et le back-end impose de réfléchir aux échanges réseau, au nombre d'appels effectués et à la quantité de données retournées par chaque endpoint. Une API mal organisée peut rapidement dégrader l'expérience utilisateur, notamment si les réponses sont trop lourdes ou si le front-end doit multiplier les requêtes pour afficher une page.</p>
+        <p>L'intégration de l'API Spotify et de l'API d'hébergement de photos m'a également amené à anticiper l'impact des dépendances externes sur les performances de l'application. Lorsqu'une application dépend de services extérieurs, il faut tenir compte du temps de réponse, de la disponibilité des services et de la manière dont les données sont récupérées puis exploitées.</p>
+        <p>Cette réflexion correspond à l'AC32.01, car elle m'a permis d'anticiper des métriques concrètes comme le temps de chargement, le nombre de requêtes, la fluidité de navigation et la performance perçue par l'utilisateur. L'optimisation ne concerne donc pas seulement le code interne, mais aussi la manière dont l'application communique avec ses propres API et avec des services externes.</p>
         <p><strong>AC32.02 - Profiler, analyser et justifier le comportement d'un code existant</strong> - Le projet Melovibes m'a amené à analyser plusieurs portions de code existantes afin de comprendre leur fonctionnement avant de les modifier. Cette phase d'analyse était nécessaire pour éviter de corriger ou d'améliorer une partie du projet sans mesurer les conséquences sur les autres éléments de l'application.</p>
         <p>J'ai notamment dû identifier certaines zones moins lisibles, certaines répétitions ou certains enchaînements de traitements qui pouvaient être simplifiés. Cette démarche m'a appris à ne pas considérer le code uniquement comme une suite d'instructions, mais comme un ensemble de choix techniques qu'il faut être capable d'expliquer et de justifier.</p>
         <p>L'apprentissage critique AC32.02 a donc été travaillé à travers cette capacité à lire, comprendre, analyser puis améliorer du code existant. Le projet m'a permis de renforcer une posture plus universitaire et professionnelle : avant de modifier, il faut comprendre ; avant d'optimiser, il faut identifier ce qui pose réellement problème.</p>
-        <p><strong>AC32.03 - Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application</strong> - Melovibes étant une application web centrée sur l'expérience utilisateur, j'ai dû mobiliser des méthodes adaptées au développement d'interfaces dynamiques et à l'organisation d'une application web. Le choix des technologies et des méthodes utilisées a été guidé par les besoins du projet : produire une interface lisible, organiser correctement les données et permettre une navigation cohérente.</p>
-        <p>Cette compétence a été travaillée par l'utilisation de technologies web classiques mais structurées autour d'une logique applicative. J'ai dû choisir des solutions adaptées au contexte du projet plutôt que d'empiler des outils sans justification. Cette démarche m'a permis de mieux comprendre l'importance du choix raisonné des ressources techniques.</p>
-        <p>L'apprentissage critique AC32.03 est donc mobilisé dans la mesure où le projet m'a amené à sélectionner et utiliser des méthodes adaptées au domaine du développement web. Les choix réalisés répondaient à un besoin précis : construire une application musicale dynamique, maintenable et compréhensible.</p>
+        <p><strong>AC32.03 - Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application</strong> - Melovibes m'a permis de travailler l'AC32.03 à travers l'utilisation de méthodes et de services adaptés au domaine d'une application musicale. Le choix d'intégrer l'API Spotify répond directement au besoin du projet : récupérer des données musicales fiables, structurées et exploitables dans l'application. Cette API permet d'enrichir le contenu de Melovibes sans devoir créer manuellement toutes les données liées aux artistes, albums ou musiques.</p>
+        <p>Le projet utilise également une API d'hébergement de photos développée par moi et mon équipe. Cette solution répond à un besoin complémentaire : gérer les images associées aux contenus de l'application. Son intégration m'a permis de travailler sur la consommation d'une API externe conçue dans un autre contexte technique, ce qui m'a obligé à prendre en compte la structure des réponses, les routes disponibles et la cohérence des données récupérées.</p>
+        <p>L'utilisation d'API Platform et de Swagger pour le back-end de Melovibes m'a aussi permis de travailler avec des outils adaptés à la conception d'API REST. Ces outils facilitent la documentation, la compréhension et l'exploitation des endpoints par le front-end.</p>
+        <p>Cette compétence est donc mobilisée car le projet m'a amené à choisir et utiliser des solutions techniques adaptées au domaine musical et à l'architecture web retenue. Les API utilisées ne sont pas accessoires : elles participent directement au fonctionnement, à la richesse et à la maintenabilité de l'application.</p>
     </div>
 
     <div class="competence">
