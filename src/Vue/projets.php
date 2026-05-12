@@ -55,6 +55,11 @@
     </div>
 
     <div id="projets">
+        <h1>Projets BUT3 - RACDV niveau 3</h1>
+        <p>
+            Les projets suivants constituent le coeur de mon portfolio d'apprentissage de troisième année. Ce sont eux qui servent de support principal aux apprentissages RACDV de niveau 3 présentés dans les pages détaillées.
+        </p>
+
         <div class="projet">
             <h2><a href="<?= $generateurUrl->generate('melovibes') ?>">Melovibes</a></h2>
             <p>
@@ -68,6 +73,11 @@
                 Refonte complète de KCDLE autour d'une API Laravel et d'un front-end Vue.js séparé. Le projet mobilise les compétences RACDV de niveau 3 liées à l'architecture, à l'évolution d'une application existante, à l'optimisation, à l'administration et à l'adaptation d'un système d'information.
             </p>
         </div>
+
+        <h1>Projets BUT2 - archives du portfolio</h1>
+        <p>
+            Les projets suivants correspondent aux travaux présentés dans mon portfolio de deuxième année. Ils restent accessibles pour montrer la continuité de mon parcours, mais ils ne sont pas utilisés comme preuves principales pour les compétences RACDV de niveau 3.
+        </p>
 
         <div class="projet">
             <h2><a href="<?= $generateurUrl->generate('kcdle') ?>">KCDLE</a></h2>
