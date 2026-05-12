@@ -30,6 +30,7 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
             <li><strong>Contraintes :</strong> Respect d'une architecture MVC, séparation claire des responsabilités, gestion des données utilisateur et communication front/back.</li>
             <li><strong>Apports techniques :</strong> Architecture modulaire, structuration PHP, intégration JavaScript, SQL, API web et réflexion sur la performance applicative.</li>
             <li><strong>Apports humains :</strong> Prise de recul sur l'ergonomie, la qualité d'une expérience utilisateur et l'évolution progressive d'une application web.</li>
+            <li><strong>Lien :</strong> <a href="https://webinfo.iutmontp.univ-montp2.fr/~mezencey/melovibes/" target="_blank" rel="noopener noreferrer">Accéder à Melovibes</a></li>
         </ul>
     </div>
 

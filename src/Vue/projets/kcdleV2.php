@@ -33,6 +33,7 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
             <li><strong>Contraintes :</strong> Conserver la logique métier du projet, intégrer de nouveaux modules et maintenir une architecture stable pendant l'évolution.</li>
             <li><strong>Apports techniques :</strong> API REST, Laravel, Vue.js, MySQL, Docker, authentification, administration, PvP, notifications Discord et maintenance applicative.</li>
             <li><strong>Apports humains :</strong> Capacité à faire évoluer un projet réel, à prioriser les refontes et à relier les choix techniques à l'expérience utilisateur.</li>
+            <li><strong>Lien :</strong> <a href="https://kcdle.com/" target="_blank" rel="noopener noreferrer">Accéder à KCDLE</a></li>
         </ul>
     </div>
 
